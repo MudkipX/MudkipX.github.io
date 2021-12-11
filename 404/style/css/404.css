@@ -1,0 +1,8 @@
+*{padding:0;margin:0}
+html,body{height:100%}
+.not-found-page .content{width:992px;margin:0 auto 80px;display:block;position:absolute;left:0;right:0;top:20%}
+.not-found-page .content .top-img{display:block;width:288px;margin:0 auto}
+.not-found-page .content .info{font-size:14px;margin:0 auto;text-align:center;font-weight:lighter}
+.not-found-page .content .info h2{font-size:26px;color:#444;line-height:30px}
+.not-found-page .content .info .state{color:#777;margin:20px 0 35px;font-size:14px;line-height:20px}
+.red-link{color:#9A0000}
