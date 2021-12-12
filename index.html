@@ -185,6 +185,85 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.mudkipx.xyz/2021/12/12/74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="MudkipX">
+      <meta itemprop="description" content="MudkipX个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MudkipX">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/12/74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell/" class="post-title-link" itemprop="url">74cms-v4.2.1-v4.2.129-后台getshell</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-12-12 16:00:59 / 修改时间：18:45:53" itemprop="dateCreated datePublished" datetime="2021-12-12T16:00:59+08:00">2021-12-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/74CMS%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">74CMS系列</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="0x00-漏洞原理"><a href="#0x00-漏洞原理" class="headerlink" title="0x00 漏洞原理"></a>0x00 漏洞原理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">触发点：Application/Admin/Controller/TplController.class.php</span><br></pre></td></tr></table></figure>
+
+<p><img src="/.xyz//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E6%BC%8F%E6%B4%9E%E7%82%B9.png" alt="漏洞点"></p>
+<p>这里利用TP的I函数接收了tpl_dir参数，看一下I函数具体实现过程</p>
+<p><img src="/.xyz//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5CI%E5%87%BD%E6%95%B0.png" alt="I函数"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/12/12/74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://blog.mudkipx.xyz/2021/12/11/%E7%AC%94%E8%80%85%E5%BA%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -330,20 +409,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
