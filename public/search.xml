@@ -7,19 +7,19 @@
 
 <p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E6%BC%8F%E6%B4%9E%E7%82%B9.png" alt="漏洞点"></p>
 <p>这里利用TP的I函数接收了tpl_dir参数，看一下I函数具体实现过程</p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5CI%E5%87%BD%E6%95%B0.png" alt="I函数"></p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5CI%E5%87%BD%E6%95%B02.png" alt="I函数2"></p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5CI%E5%87%BD%E6%95%B03.png" alt="I函数3"></p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E8%BF%87%E6%BB%A4%E5%87%BD%E6%95%B0.png" alt="过滤函数"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5CI%E5%87%BD%E6%95%B0.png" alt="I函数"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5CI%E5%87%BD%E6%95%B02.png" alt="I函数2"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5CI%E5%87%BD%E6%95%B03.png" alt="I函数3"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E8%BF%87%E6%BB%A4%E5%87%BD%E6%95%B0.png" alt="过滤函数"></p>
 <p>至此可以知道，这里I函数一共调用了htmlspecialchars,stripslashes,strip_tags,trim函数，咱们继续往下看。</p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5Cupdate_config.png" alt="update_config"></p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5Cupdate_config1.png" alt="update_config1"></p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5Cupdate_config2.png" alt="update_config2"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5Cupdate_config.png" alt="update_config"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5Cupdate_config1.png" alt="update_config1"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5Cupdate_config2.png" alt="update_config2"></p>
 <p>至此，这个漏洞有了完整的利用链，接下来看看如何利用漏洞。</p>
-<h3 id="0x01-利用方法"><a href="#0x01-利用方法" class="headerlink" title="0x01 利用方法"></a>0x01 利用方法</h3><p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E5%88%A9%E7%94%A8.png" alt="利用"></p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E5%88%A9%E7%94%A81.png" alt="利用1"></p>
+<h3 id="0x01-利用方法"><a href="#0x01-利用方法" class="headerlink" title="0x01 利用方法"></a>0x01 利用方法</h3><p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E5%88%A9%E7%94%A8.png" alt="利用"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E5%88%A9%E7%94%A81.png" alt="利用1"></p>
 <p>访问config.php文件</p>
-<p><img src="/.cn//%5C74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E5%88%A9%E7%94%A82.png" alt="利用2"></p>
+<p><img src="/.cn//74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell%5C%E5%88%A9%E7%94%A82.png" alt="利用2"></p>
 <h2 id="0x02-下一步工作"><a href="#0x02-下一步工作" class="headerlink" title="0x02 下一步工作"></a>0x02 下一步工作</h2><p>74cms v4.2.3 任意文件删除</p>
 ]]></content>
       <categories>
