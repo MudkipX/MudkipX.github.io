@@ -185,6 +185,85 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.mudkipx.cn/2021/12/12/74cms-v4-2-3-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="MudkipX">
+      <meta itemprop="description" content="MudkipX个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MudkipX">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/12/74cms-v4-2-3-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4/" class="post-title-link" itemprop="url">74cms-v4.2.3-任意文件删除</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-12-12 19:41:01 / 修改时间：20:20:22" itemprop="dateCreated datePublished" datetime="2021-12-12T19:41:01+08:00">2021-12-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/74CMS%E7%B3%BB%E5%88%97/" itemprop="url" rel="index"><span itemprop="name">74CMS系列</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="0x00-漏洞原理"><a href="#0x00-漏洞原理" class="headerlink" title="0x00 漏洞原理"></a>0x00 漏洞原理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">触发点：Application/Admin/Controller/DatabaseController.class.php</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/12/12/74cms-v4-2-3-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4/%E8%A7%A6%E5%8F%91%E7%82%B9.png" alt="触发点"></p>
+<p>经过上一章节<a href="https://blog.mudkipx.cn/2021/12/12/74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell/">74cms-v4-2-1-v4-2-129-后台getshell</a>,我们知道这里的I函数主要用了这几个函数进行过滤：htmlspecialchars,stripslashes,strip_tags,trim</p>
+<p><img src="/2021/12/12/74cms-v4-2-3-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4/rmdirs.png" alt="rmdirs"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/12/12/74cms-v4-2-3-%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://blog.mudkipx.cn/2021/12/12/74cms-v4-2-1-v4-2-129-%E5%90%8E%E5%8F%B0getshell/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -409,7 +488,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
